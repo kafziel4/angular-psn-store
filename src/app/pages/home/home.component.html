@@ -1,0 +1,11 @@
+<div class="home__container">
+  @for (game of gameData; track game.id) {
+  <app-card
+    gameCover="{{ game.gameCover }}"
+    gameLabel="{{ game.gameLabel }}"
+    gameName="{{ game.gameName }}"
+    gameType="{{ game.gameType }}"
+    gamePrice="{{ game.gamePrice }}"
+  ></app-card>
+  }
+</div>
